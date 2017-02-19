@@ -3,9 +3,9 @@
 one:
   name: MyString
   genre: MyString
-  audio: MyText
+  audio: MyString
 
 two:
   name: MyString
   genre: MyString
-  audio: MyText
+  audio: MyString

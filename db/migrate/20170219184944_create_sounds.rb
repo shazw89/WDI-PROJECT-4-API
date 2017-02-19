@@ -3,7 +3,7 @@ class CreateSounds < ActiveRecord::Migration[5.0]
     create_table :sounds do |t|
       t.string :name
       t.string :genre
-      t.text :audio
+      t.string :audio
 
       t.timestamps
     end
