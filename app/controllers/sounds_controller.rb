@@ -5,11 +5,14 @@ class SoundsController < ApplicationController
   # GET /sounds.json
   def index
     @sounds = Sound.all
+
+    render json: @sounds
   end
 
   # GET /sounds/1
   # GET /sounds/1.json
   def show
+    render json: @sound
   end
 
   # GET /sounds/new
@@ -69,6 +72,6 @@ class SoundsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sound_params
-      params.require(:sound).permit(:name, :type)
+      params.require(:sound).permit(:name, :audio, :genre)
     end
 end

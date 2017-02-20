@@ -1,14 +1,14 @@
-['users', 'sounds', 'colours'].each do|table_name|
+# ['users', 'sounds', 'colours'].each do|table_name|
 
 Colour.destroy_all
 Sound.destroy_all
+User.destroy_all
 
-user1 = User.create!([
-email:" ali@alimolloy.com" ,
-password_digest: " ",
-created_at:" ",
-updated_at:" ",
-  ])
+user1 = User.create!(
+email: "ali@alimolloy.com",
+password: "password",
+password_confirmation: "password"
+  )
 
 Sound.create! ([
   {
@@ -33,20 +33,21 @@ Sound.create! ([
   }
 ])
 
-Colour.create! ([
+user1.colours.create!([
   {
-    color: "ff69b4",
+    name: "ff69b4",
     sound_id: Sound.all.first.id
   },
   {
-    color: "ffffff",
+    name: "ffffff",
     sound_id: Sound.all.last.id
   },
   {
-    color: "fefefe",
+    name: "fefefe",
     sound_id: Sound.all.first.id
   },
   {
-    color: "bada55",
+    name: "bada55",
     sound_id: Sound.all.first.id
-  }]);
+  }
+])

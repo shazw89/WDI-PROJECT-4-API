@@ -1,7 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  type: 
+  sound: one
+  name: MyString
+  user: one
 
 two:
-  type: 
+  sound: two
+  name: MyString
+  user: two

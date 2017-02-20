@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  # resources :sounds, only: [:index]
+  resources :colours
+  resources :sounds, only: [:index, :show]
   # resources :colours,  only: [:create]
 
   resources :users
