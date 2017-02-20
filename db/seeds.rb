@@ -1,3 +1,5 @@
+['users', 'sounds', 'colours'].each do|table_name|
+
 Colour.destroy_all
 Sound.destroy_all
 
@@ -40,5 +42,4 @@ Colour.create! ([
   {
     color: "bada55",
     sound_id: Sound.all.first.id
-  }
-])
+  }]);
