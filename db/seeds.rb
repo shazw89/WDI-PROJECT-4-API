@@ -3,6 +3,13 @@
 Colour.destroy_all
 Sound.destroy_all
 
+user1 = User.create!([
+email:" ali@alimolloy.com" ,
+password_digest: " ",
+created_at:" ",
+updated_at:" ",
+  ])
+
 Sound.create! ([
   {
     name: "Jupiter",

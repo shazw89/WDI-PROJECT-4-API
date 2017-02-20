@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+
   # resources :sounds, only: [:index]
   # resources :colours,  only: [:create]
 
+  resources :users
   post 'register', to: 'authentications#register'
   post 'login', to: 'authentications#login'
   get 'login', to: 'sessions#new'
