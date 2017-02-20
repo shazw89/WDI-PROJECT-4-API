@@ -1,3 +1,3 @@
 class Sound < ApplicationRecord
-  has_many :colour
+  has_many :colours
 end
