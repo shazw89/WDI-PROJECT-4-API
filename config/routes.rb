@@ -1,17 +1,8 @@
 Rails.application.routes.draw do
+    post 'register', to: 'authentications#register'
+    post 'login', to: 'authentications#login'
+    get 'users/:id', to: 'users#show'
 
-  resources :colours
-  resources :sounds, only: [:index, :show]
-  # resources :colours,  only: [:create]
-
-  resources :users
-  post 'register', to: 'authentications#register'
-  post 'login', to: 'authentications#login'
-  get 'login', to: 'sessions#new'
-  get 'register', to: 'users#new'
-  delete 'logout', to: 'sessions#destroy'
-
-  get 'api/sounds'
-  get 'api/colours'
-
+    resources :colours
+    resources :sounds, only: [:index, :show]
 end

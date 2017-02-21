@@ -8,7 +8,7 @@ user1 = User.create!(
 email: "ali@alimolloy.com",
 password: "password",
 password_confirmation: "password"
-  )
+)
 
 Sound.create! ([
   {
