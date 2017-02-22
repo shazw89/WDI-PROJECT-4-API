@@ -4,11 +4,23 @@ Colour.destroy_all
 Sound.destroy_all
 User.destroy_all
 
-user1 = User.create!(
-email: "ali@alimolloy.com",
-password: "password",
-password_confirmation: "password"
-)
+User.create!([
+  {
+    email: "ali@ali.com",
+    password: "password",
+    password_confirmation: "password"
+  },
+  {
+    email: "remyce@remyce.com",
+    password: "password",
+    password_confirmation: "password"
+  },
+  {
+    email: "sharon@sharon.com",
+    password: "password",
+    password_confirmation: "password"
+  }
+])
 
 Sound.create! ([
   {
@@ -46,29 +58,27 @@ Sound.create! ([
     genre: "Space",
     audio: "https://www.nasa.gov/mp3/584791main_spookysaturn.mp3"
   }
-
-
-
-
-
-
 ])
 
-user1.colours.create!([
+Colour.create!([
   {
     name: "ff69b4",
-    sound_id: Sound.all.first.id
+    sound_id: Sound.all.first.id,
+    user_id: User.last.id
   },
   {
     name: "ffffff",
-    sound_id: Sound.all.last.id
+    sound_id: Sound.all.last.id,
+    user_id: User.last.id
   },
   {
     name: "fefefe",
-    sound_id: Sound.all.first.id
+    sound_id: Sound.all.first.id,
+    user_id: User.first.id
   },
   {
     name: "bada55",
-    sound_id: Sound.all.first.id
+    sound_id: Sound.all.first.id,
+    user_id: User.first.id
   }
 ])
