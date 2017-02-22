@@ -15,10 +15,10 @@ class SoundsController < ApplicationController
     render json: @sound
   end
 
-  # GET /sounds/new
-  def new
-    @sound = Sound.new
-  end
+  # # GET /sounds/new
+  # def new
+  #   @sound = Sound.new
+  # end
 
   # GET /sounds/1/edit
   def edit
