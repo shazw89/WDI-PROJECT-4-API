@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 20170222102237) do
   end
 
   create_table "results", force: :cascade do |t|
-    t.string   "sounds"
-    t.string   "colours"
+    t.string   "sound"
+    t.string   "colour"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -30,7 +30,28 @@ Sound.create! ([
     name: "Bird",
     genre: "Nature",
     audio: "http://www.wavlist.com/soundfx/010/crow-4.wav"
+  },
+  {
+    name: "Comet",
+    genre: "Space",
+    audio: "https://www.nasa.gov/externalflash/interstellar.mp3"
+  },
+  {
+    name: "Kepler",
+    genre: "Space",
+    audio: "https://www.nasa.gov/mp3/578359main_kepler_star_KIC7671081B.mp3"
+  },
+  {
+    name: "Saturn",
+    genre: "Space",
+    audio: "https://www.nasa.gov/mp3/584791main_spookysaturn.mp3"
   }
+
+
+
+
+
+
 ])
 
 user1.colours.create!([
